@@ -190,3 +190,14 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+
+.gpaBar{
+
+  background-color: #bd5d38 !important;
+  height: 2px;
+  width:0px;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+        background-color: #c06014 !important;
+}

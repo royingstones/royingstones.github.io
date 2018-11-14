@@ -68,13 +68,7 @@ header {
   border-bottom: 1px solid #000;
 }
 
-.logo, h2 {
-  opacity: .6;
-  font-size: 22px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 200;
-}
+
 
 .logo:hover {
   opacity: 1;
@@ -339,12 +333,12 @@ article {
 }
 
 .line {
-  width: 100%;
+  width: 40%;
   padding: 1px 0px;
 }
 
 .player {
-  opacity: .4;
+  opacity: .9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,7 +379,7 @@ article {
   left: 0;
   top: 0;
   display: block;
-  width: 100%;
+  width: 30%;
   height: 100%;
   background-color: currentColor;
 }

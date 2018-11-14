@@ -2334,13 +2334,13 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
+  background-color: #c06014;
   border-color: #007bff;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0069d9;
+  background-color: #c06014;
   border-color: #0062cc;
 }
 
@@ -2350,7 +2350,7 @@ fieldset:disabled a.btn {
 
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #007bff;
+  background-color: #c06014;
   border-color: #007bff;
 }
 
@@ -9027,4 +9027,11 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+.btn-primary{
+        border-color:#191919!important; 
+        border:2px;
+      }
+      .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+        background-color: #191919 !important;
+      }
 /*# sourceMappingURL=bootstrap.css.map */

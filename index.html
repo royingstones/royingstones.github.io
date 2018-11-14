@@ -15,27 +15,25 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-
     <link href="css/resume.min.css" rel="stylesheet">
-    <link href="css/assets/css/anime.css" rel="stylesheet">
+    <link href="anime-master/documentation/assets/css/documentation.css" rel="stylesheet">
+
+    <style> 
+      .btn-primary{
+        border-color:#191919!important; 
+        border:2px;
+      }
+      .btn-primary:hover,.btn-primary:focus,.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:active, .btn-primary:visited {
+        background-color: #191919 !important;
+      }
+    </style>
   </head>
-  <style>
-    
-    div.box {
-      width:10rem;
-      height: 10rem;
-      background: black;
-    }
 
-
-
-  </style>
   <body id="page-top">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Roy Regala</span>
+        <span class="d-block d-lg-none">RNR</span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
         </span>
@@ -68,7 +66,7 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-          <h1 class="mb-0">Roy Nino
+          <h1 class="mb-0">Roy NiÑo
             <span class="text-primary">Regala</span>
           </h1>
           <div class="subheading mb-5">Brgy. San Juan, Palompon, Leyte 6538 PH
@@ -88,13 +86,6 @@
             <a href="https://www.facebook.com/royingstones" target="_blank">
               <i class="fab fa-facebook-f"></i>
             </a>
-                <script>
-                  anime({
-                      targets: 'i.fa-linkedin-in',
-                      rotate:
-                  });
-                </script>
-
           </div>
         </div>
       </section>
@@ -128,7 +119,18 @@
               <h3 class="mb-0">University of San Carlos</h3>
               <div class="subheading mb-3">Bachelor of Science</div>
               <div>Computer Engineering - Software Track</div>
-              <p>GPA: 2.08</p>
+ 
+              <div id="domAttributes" style="font-size: 70% "> 
+                <strong>GPA : </strong>
+                <input readonly="readonly" class="text-output1" style="border: none; padding: 0px; margin: 0px; max-width: 1.5%;" value="0">
+                <input readonly="readonly" class="text-output2" style="border: none; padding: 0px; margin: 0px; max-width: 1%;" value=".">
+                <input readonly="readonly" class="text-output3" style="border: none; padding: 0px; margin: 0px; max-width: 1.5%;" value="0">
+                <input readonly="readonly" class="text-output4" style="border: none; padding: 0px; margin: 0px; max-width: 1.5%;" value="0">
+                <div class="gpaBar"></div>
+              </div>
+                    <div id="gpaBar">
+                      <div class="square el" style="height: 10px; width: 0px; background-color:#c06014; border: 1px black; "></div>
+                    </div>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">June 2013 - April 2018</span>
@@ -153,8 +155,8 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
           <h2 class="mb-5">Skills and Abilities</h2>
-
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+            
           <ul class="list-inline dev-icons">
             <li class="list-inline-item">
               <i class="fab fa-html5"></i>
@@ -172,7 +174,26 @@
               <i class="fab fa-js"></i>
             </li>
           </ul>
-
+          <div id="basicTimeline">
+              <div class="line">
+                <div class="skillOne el" 
+                style="height: auto; width: 13%; background-color:#c06014;  border: 2px black; ">
+                <p style="color:white; margin-left: 7%;">PHP</p></div>
+              </div>
+              <div class="line">
+                <div class="skillTwo el" 
+                style="height: auto; width: 13%; background-color:#c06014; border: 1px black; ">
+                <p style="color:white; margin-left: 7%;">HTML5</p></div>
+              </div>
+              <div class="line">
+                <div class="skillThree el" 
+                style="height: auto; width: 13%; background-color:#c06014; border: 1px black; ">
+                <p style="color:white; margin-left: 7%">C++</p></div>
+              </div>
+                <div class="line player"> 
+                  <button class="play btn-primary ">Check Stats</button>
+                </div>
+            </div>
           <div class="subheading mb-3">Others</div>
           <ul class="fa-ul mb-0">
             <li>
@@ -197,7 +218,7 @@
         <div class="my-auto">
           <h2 class="mb-5">Interests</h2>
           <p>Apart from being a computer engineer, I enjoy most of my time indoors reading sci-fi and inspirational genre books. My favorite book is JD Salinger's The Catcher in the Rye. I follow a number of sci-fi and fantasy genre movies and television shows. </p>
-          <p class="mb-0"> Along with the love of literature, I also like music and I do sing. I'm an avid fan of Indie music. When I'm in my room, I cover songs that is inclined to my personal life. And like every other guy in my age, I also like to spend my free time playing MOBA like League of Legends and DOTA2.</p>
+          <p class="mb-0"> Along with the love of literature, I also like music and I do sing. I'm an avid fan of Indie music. I cover songs that is inclined to my personal life. And like every other guy in my age, I also like to spend my free time playing MOBA like League of Legends and DOTA2.</p>
         </div>
       </section>
 
@@ -251,8 +272,91 @@
     <script src="js/resume.min.js"></script>
 
     <!-- Anime JavaScript -->
-    <script src="anime.min.js"></script>
-    <script src="anime.js"></script>
+    <script src="anime-master/anime.min.js"></script>
+    <script src="anime-master/anime.js"></script>
+    <script>
+        anime({
+          targets:'div.social-icons a',
+          rotate:'3turn',
+          duration: 2000,   
+           
+        });
+        anime({
+          targets:'div.social-icons',
+          scale: 1.2,
+          direction: 'alternate',
+          duration: 2000,
+          translateX: 100,
+
+        });
+
+        var domAttributes = anime({
+          targets: '#domAttributes input.text-output1',
+          value: 2,
+          round: 1,
+          duration: 2000,
+          easing: 'easeInOutExpo',
+          direction: 'alternate',
+          loop: true
+        });
+          
+          var domAttributes = anime({
+          targets: '#domAttributes input.text-output4',
+          value: 8,
+          round: 1,
+          duration: 2000,
+          easing: 'easeInOutExpo',
+          direction: 'alternate',
+          loop: true
+        });
+          
+          var gpaBar = anime({
+              targets: '#gpaBar .el',
+              width: {
+                value: '+=20%',
+                duration: 2000,
+                easing: 'easeInOutSine'   
+              },
+              direction: 'alternate',
+              loop: true
+            });
+          
+          var basicTimeline = anime.timeline({
+            autoplay: false
+
+            });
+
+          basicTimeline
+            .add({
+              targets: '#basicTimeline .skillOne.el',
+              width: {
+                value: '+=80%',
+                duration: 1000,
+                easing: 'easeInOutSine'   
+              }
+            })
+            .add({
+              targets: '#basicTimeline .skillTwo.el',
+              width: {
+                value: '+=100%',
+                duration: 1000,
+                easing: 'easeInOutSine'   
+              }
+            })
+            .add({
+              targets: '#basicTimeline .skillThree.el',
+              width: {
+                value: '+=70%',
+                duration: 1000,
+                easing: 'easeInOutSine'   
+              }
+            });
+
+            document.querySelector('#basicTimeline .play').onclick = basicTimeline.play;
+            document.querySelector('#basicTimeline .pause').onclick = basicTimeline.pause;
+
+
+    </script>
   </body>
 
 </html>
