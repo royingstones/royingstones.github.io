@@ -176,7 +176,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #BD5D38 !important;
+  background-color: #191919!important;
 }
 
 .text-primary {
@@ -191,13 +191,50 @@ a:hover, a:focus, a:active {
   color: #824027;
 }
 
-.gpaBar{
 
-  background-color: #bd5d38 !important;
-  height: 2px;
-  width:0px;
+.GPA{
+height: 10px; 
+width: 0px; 
+background-color:#c06014; 
 }
 
-.btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-        background-color: #c06014 !important;
+.skill{
+  height: auto; 
+  width: 0%; 
+  background-color:#c06014;  
 }
+.skillSub{
+  color:white; 
+  margin-left: 10px; 
+  margin-bottom: 0;
+}
+
+.skillValue{
+  border: none; 
+  width: 12%;
+  text-align: right;
+  background-color: rgba(0,0,0,0.10);
+  position: relative;
+}
+
+.btn-primary{
+  border-color:#191919!important; 
+  border:2px;
+}
+
+.btn-primary:hover,.btn-primary:focus,.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:active, .btn-primary:visited {
+  background-color: #191919 !important;
+}
+
+.gpaScore{
+  font-size: 70%;
+  color: #c06014;
+}
+
+.textOutput{
+  border: none; 
+  padding: 0px; 
+  margin: 0px; 
+  max-width: 1.6%;
+}
+

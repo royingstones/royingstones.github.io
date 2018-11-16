@@ -16,16 +16,11 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="css/resume.min.css" rel="stylesheet">
+    <link href="css/resume.css" rel="stylesheet">
     <link href="anime-master/documentation/assets/css/documentation.css" rel="stylesheet">
 
     <style> 
-      .btn-primary{
-        border-color:#191919!important; 
-        border:2px;
-      }
-      .btn-primary:hover,.btn-primary:focus,.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:active, .btn-primary:visited {
-        background-color: #191919 !important;
-      }
+      
     </style>
   </head>
 
@@ -120,17 +115,16 @@
               <div class="subheading mb-3">Bachelor of Science</div>
               <div>Computer Engineering - Software Track</div>
  
-              <div id="domAttributes" style="font-size: 70% "> 
+              <div class="gpaScore"> 
                 <strong>GPA : </strong>
-                <input readonly="readonly" class="text-output1" style="border: none; padding: 0px; margin: 0px; max-width: 1.5%;" value="0">
-                <input readonly="readonly" class="text-output2" style="border: none; padding: 0px; margin: 0px; max-width: 1%;" value=".">
-                <input readonly="readonly" class="text-output3" style="border: none; padding: 0px; margin: 0px; max-width: 1.5%;" value="0">
-                <input readonly="readonly" class="text-output4" style="border: none; padding: 0px; margin: 0px; max-width: 1.5%;" value="0">
-                <div class="gpaBar"></div>
+                <input readonly="readonly" class="textOutput o1"  value="0">
+                <input readonly="readonly" class="textOutput o2"  value=".">
+                <input readonly="readonly" class="textOutput o3"  value="0">
+                <input readonly="readonly" class="textOutput o4"  value="0">
               </div>
-                    <div id="gpaBar">
-                      <div class="square el" style="height: 10px; width: 0px; background-color:#c06014; border: 1px black; "></div>
-                    </div>
+                  <div class="gpaBar">
+                    <div class="GPA"></div>
+                  </div>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">June 2013 - April 2018</span>
@@ -156,42 +150,51 @@
         <div class="my-auto">
           <h2 class="mb-5">Skills and Abilities</h2>
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-            
-          <ul class="list-inline dev-icons">
-            <li class="list-inline-item">
-              <i class="fab fa-html5"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-css3-alt"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-wordpress"></i>
-            </li>
-             <li class="list-inline-item">
-              <i class="fab fa-php"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-js"></i>
-            </li>
-          </ul>
-          <div id="basicTimeline">
+          <div id="skillIcons">
+            <ul class="list-inline dev-icons">
+              <li class="list-inline-item">
+                <i class="fab fa-html5"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-css3-alt"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-wordpress"></i>
+              </li>
+               <li class="list-inline-item">
+                <i class="fab fa-php"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-js"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-npm"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-node-js"></i>
+              </li>
+            </ul>
+          </div>
+          <br>
+          <div id="basicTimeline" >
               <div class="line">
-                <div class="skillOne el" 
-                style="height: auto; width: 13%; background-color:#c06014;  border: 2px black; ">
-                <p style="color:white; margin-left: 7%;">PHP</p></div>
+                <div class="skill elOne rounded-right">
+                <p class="skillSub">C++</p></div>
               </div>
               <div class="line">
-                <div class="skillTwo el" 
-                style="height: auto; width: 13%; background-color:#c06014; border: 1px black; ">
-                <p style="color:white; margin-left: 7%;">HTML5</p></div>
+                <div class="skill elTwo rounded-right">
+                <p class="skillSub">PHP</p></div>
               </div>
               <div class="line">
-                <div class="skillThree el" 
-                style="height: auto; width: 13%; background-color:#c06014; border: 1px black; ">
-                <p style="color:white; margin-left: 7%">C++</p></div>
+                <div class="skill elThree rounded-right">
+                <p class="skillSub">HTML5</p></div>
               </div>
-                <div class="line player"> 
-                  <button class="play btn-primary ">Check Stats</button>
+              <div class="line">
+                <div class="skill elFour rounded-right">
+                <p class="skillSub">CSS3</p></div>
+              </div>
+                <div class="player col-5"> 
+                  <button class="play btn-primary ">Rank</button>
                 </div>
             </div>
           <div class="subheading mb-3">Others</div>
@@ -217,8 +220,8 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
           <h2 class="mb-5">Interests</h2>
-          <p>Apart from being a computer engineer, I enjoy most of my time indoors reading sci-fi and inspirational genre books. My favorite book is JD Salinger's The Catcher in the Rye. I follow a number of sci-fi and fantasy genre movies and television shows. </p>
-          <p class="mb-0"> Along with the love of literature, I also like music and I do sing. I'm an avid fan of Indie music. I cover songs that is inclined to my personal life. And like every other guy in my age, I also like to spend my free time playing MOBA like League of Legends and DOTA2.</p>
+          <p>Apart from being a computer engineer, I enjoy most of my free time indoors reading sci-fi and inspirational genre books. My favorite book is JD Salinger's The Catcher in the Rye. I also follow a number of sci-fi and fantasy genre movies and television shows. </p>
+          <p class="mb-0"> Along with the love of literature, I like music and singing. I'm an avid fan of Indie music. I cover songs that I can sing and love. And like every other guy in my age, I play MOBA games like League of Legends and DOTA2.</p>
         </div>
       </section>
 
@@ -273,25 +276,28 @@
 
     <!-- Anime JavaScript -->
     <script src="anime-master/anime.min.js"></script>
+
     <script src="anime-master/anime.js"></script>
+    <!--Social Icons Animation (rotate and translateX-->
     <script>
         anime({
           targets:'div.social-icons a',
-          rotate:'3turn',
-          duration: 2000,   
-           
+          rotate:'5turn',
+          direction: 'alternate',
+          duration: 2000,      
         });
         anime({
           targets:'div.social-icons',
-          scale: 1.2,
+          scale: 1.5,
           direction: 'alternate',
           duration: 2000,
-          translateX: 100,
-
+          translateX: 350,
         });
-
-        var domAttributes = anime({
-          targets: '#domAttributes input.text-output1',
+  </script> 
+  <!-- GPA Score Animation (increase/decrease width and numerical score value)-->
+  <script>
+        var gpaScore = anime({
+          targets: 'div.gpaScore input.o1',
           value: 2,
           round: 1,
           duration: 2000,
@@ -299,9 +305,8 @@
           direction: 'alternate',
           loop: true
         });
-          
-          var domAttributes = anime({
-          targets: '#domAttributes input.text-output4',
+        var gpaScore = anime({
+          targets: 'div.gpaScore input.o4',
           value: 8,
           round: 1,
           duration: 2000,
@@ -309,54 +314,71 @@
           direction: 'alternate',
           loop: true
         });
-          
-          var gpaBar = anime({
-              targets: '#gpaBar .el',
-              width: {
-                value: '+=20%',
-                duration: 2000,
-                easing: 'easeInOutSine'   
-              },
-              direction: 'alternate',
+        var gpaBar = anime({
+          targets: 'div.gpaBar .GPA',
+            width: {
+            value: '+=20%',
+            duration: 2000,
+            easing: 'easeInOutSine'   
+            },
+          direction: 'alternate',
               loop: true
-            });
-          
-          var basicTimeline = anime.timeline({
-            autoplay: false
-
-            });
+        });
+  </script> 
+  <!-- Programming lang and tools icon animation. Change color-->
+  <script >
+        var  skillIcons= anime({
+          targets: '#skillIcons .list-inline-item',
+          translateY: 20,
+          direction: 'alternate',
+          loop: true,
+          delay: function(el, i, l) {
+          return i * 100;
+          }
+        });
+  </script>
+  <!-- Skills animation increase width with play button -->
+  <script>    
+        var basicTimeline = anime.timeline({
+          autoplay: false
+        });
 
           basicTimeline
             .add({
-              targets: '#basicTimeline .skillOne.el',
-              width: {
-                value: '+=80%',
-                duration: 1000,
-                easing: 'easeInOutSine'   
-              }
-            })
-            .add({
-              targets: '#basicTimeline .skillTwo.el',
+              targets: '#basicTimeline .skill.elOne',
               width: {
                 value: '+=100%',
-                duration: 1000,
+                duration: 2000,
                 easing: 'easeInOutSine'   
               }
             })
             .add({
-              targets: '#basicTimeline .skillThree.el',
+              targets: '#basicTimeline .skill.elTwo',
               width: {
                 value: '+=70%',
-                duration: 1000,
+                duration: 2000,
                 easing: 'easeInOutSine'   
               }
+            })
+            .add({
+              targets: '#basicTimeline .skill.elThree',
+              width: {
+                value: '+=90%',
+                duration: 2000,
+                easing: 'easeInOutSine'   
+              }
+            })
+            .add({
+              targets: '#basicTimeline .skill.elFour',
+              width: {
+                value: '+=80%',
+                duration: 2000,
+                easing: 'easeInOutSine'   
+              } 
             });
-
             document.querySelector('#basicTimeline .play').onclick = basicTimeline.play;
-            document.querySelector('#basicTimeline .pause').onclick = basicTimeline.pause;
-
-
     </script>
+
   </body>
 
 </html>

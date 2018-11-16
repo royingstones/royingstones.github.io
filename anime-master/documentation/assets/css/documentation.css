@@ -333,8 +333,10 @@ article {
 }
 
 .line {
-  width: 40%;
   padding: 1px 0px;
+  background-color: rgba(0,0,0,0.3); 
+  width: 42%; 
+  border: 1px solid #595959;
 }
 
 .player {
@@ -350,6 +352,7 @@ article {
           justify-content: center;
   padding-top: 20px;
   padding-bottom: 10px;
+
 }
 
 .player button {
